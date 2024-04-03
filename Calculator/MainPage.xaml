@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Calculator.MainPage">
+
+        <!-- Display -->
+
+        <Grid 
+                RowSpacing="6"
+                ColumnSpacing="6"
+                RowDefinitions="*, *, *, *, *,*"
+                ColumnDefinitions="*, *, *, *">
+
+        <Editor x:Name="result"
+                Grid.Row="0"
+                Grid.ColumnSpan="4"
+                IsReadOnly="False" 
+                HorizontalTextAlignment="End"
+                VerticalTextAlignment="Center"/>
+        
+        <Button x:Name="acbttn"  
+                Grid.Row="1"
+                Text="AC"
+                Clicked="OnButtonClick"
+                /> 
+
+        <Button x:Name="bttn0"  
+                Grid.Row="1" 
+                Grid.Column="1" 
+                Text="+/-"
+                Clicked="OnButtonClick"/>
+                
+        <Button x:Name="modbttn"  
+                Grid.Row="1" 
+                Grid.Column="2" 
+                Text="%"
+                Clicked="OnButtonClick"/>
+
+        <Button x:Name="divbttn"  
+                Grid.Row="1" 
+                Grid.Column="3" 
+                Text="+/-"
+                Clicked="OnButtonClick"/>
+
+        
+         <!-- Row 1 -->  
+        <Button x:Name="num7"  
+                Grid.Row="2" 
+                Grid.Column="0" 
+                Text="7"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num8"  
+                Grid.Row="2" 
+                Grid.Column="1" 
+                Text="8"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num9"  
+                Grid.Row="2" 
+                Grid.Column="2" 
+                Text="8"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="mulbttn"  
+                Grid.Row="2" 
+                Grid.Column="3" 
+                Text="X"
+                Clicked="OnButtonClick"/>      
+        
+        <!-- Row 2 -->  
+        <Button x:Name="num4"  
+                Grid.Row="3" 
+                Grid.Column="0" 
+                Text="4"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num5"  
+                Grid.Row="3" 
+                Grid.Column="1" 
+                Text="5"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num6"  
+                Grid.Row="3" 
+                Grid.Column="2" 
+                Text="6"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="Minusbttn"  
+                Grid.Row="3" 
+                Grid.Column="3" 
+                Text="-"
+                Clicked="OnButtonClick"/>    
+
+        <Button x:Name="num1"  
+                Grid.Row="4" 
+                Grid.Column="0" 
+                Text="1"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num2"  
+                Grid.Row="4" 
+                Grid.Column="1" 
+                Text="2"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="num3"  
+                Grid.Row="4" 
+                Grid.Column="2" 
+                Text="3"
+                Clicked="OnButtonClick"/>
+        <Button x:Name="plusbttn"  
+                Grid.Row="4" 
+                Grid.Column="3" 
+                Text="+"
+                Clicked="OnButtonClick"/>   
+
+                <!-- Row 3 -->  
+        <Button x:Name="num0"  
+                Grid.Row="5" 
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Text="0"
+                Clicked="OnButtonClick"/>
+
+        <Button x:Name="commabttn"  
+                Grid.Row="5" 
+                Grid.Column="2"
+                Text=","
+                Clicked="OnButtonClick"/>
+        
+        <Button x:Name="equalbttn"  
+                Grid.Row="5" 
+                Grid.Column="3"
+                Text="="
+                Clicked="OnButtonClick"/>
+
+
+
+
+    </Grid>
+
+            
+</ContentPage>

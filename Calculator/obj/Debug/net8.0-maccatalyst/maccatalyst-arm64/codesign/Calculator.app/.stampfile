@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/ajugeorge/charp2/calculator/Calculator/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/ajugeorge/charp2/calculator/Calculator/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Calculator.app
