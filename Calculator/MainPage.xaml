@@ -21,7 +21,7 @@
         <Button x:Name="acbttn"  
                 Grid.Row="1"
                 Text="AC"
-                Clicked="OnButtonClick"
+                Clicked="OnClear"
                 /> 
 
         <Button x:Name="bttn0"  
@@ -39,8 +39,8 @@
         <Button x:Name="divbttn"  
                 Grid.Row="1" 
                 Grid.Column="3" 
-                Text="+/-"
-                Clicked="OnButtonClick"/>
+                Text="/"
+                Clicked="OnOperatorClick"/>
 
         
          <!-- Row 1 -->  
@@ -62,8 +62,8 @@
         <Button x:Name="mulbttn"  
                 Grid.Row="2" 
                 Grid.Column="3" 
-                Text="X"
-                Clicked="OnButtonClick"/>      
+                Text="*"
+                Clicked="OnOperatorClick"/>      
         
         <!-- Row 2 -->  
         <Button x:Name="num4"  
@@ -85,7 +85,7 @@
                 Grid.Row="3" 
                 Grid.Column="3" 
                 Text="-"
-                Clicked="OnButtonClick"/>    
+                Clicked="OnOperatorClick"/>    
 
         <Button x:Name="num1"  
                 Grid.Row="4" 
@@ -106,7 +106,7 @@
                 Grid.Row="4" 
                 Grid.Column="3" 
                 Text="+"
-                Clicked="OnButtonClick"/>   
+                Clicked="OnOperatorClick"/>   
 
                 <!-- Row 3 -->  
         <Button x:Name="num0"  
@@ -126,7 +126,7 @@
                 Grid.Row="5" 
                 Grid.Column="3"
                 Text="="
-                Clicked="OnButtonClick"/>
+                Clicked="OnCalculate"/>
 
 
 
